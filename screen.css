@@ -54,14 +54,31 @@ main {
  display: flex;
  flex-flow: column nowrap;
  align-items: center;
+ background-image: url(sunny-winter.jpeg);
+ background-size: cover;
 }
 
 h1 {
     text-align: right;
 }
+
+/**********
+top display and dice orientation
+***********/
+
 .topdisplay { 
     border: 10px solid red;
     background-color: #F07C6C;
+}
+
+.onedice {
+    transform: rotate(10deg);
+    display: inline-block;
+}
+
+.sixdice {
+    transform: rotate(12deg);
+    display: inline-block;
 }
 
 
@@ -73,15 +90,26 @@ h1 {
 .summarybox {
     border: 10px solid pink;
     margin-top: -.7em;
-    background-color: #E7EF61;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .hourlyforecast {
     border: 10px solid orange;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .currentconditions {
     border: 10px solid green;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 /**********************************************
@@ -92,10 +120,12 @@ h1 {
     margin: 100px;
     padding: 0;
     background: #A6D8DB;
+/**********    
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+***************/    
 }
 
 .home {
