@@ -120,11 +120,12 @@ top display and dice orientation
     margin: 100px;
     padding: 0;
     background: #A6D8DB;  
+/**********************    
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-  
+************************/  
 }
 
 .home {
