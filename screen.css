@@ -119,35 +119,50 @@ top display and dice orientation
     border: 10px solid blue;
     margin: 100px;
     padding: 0;
-    background: #A6D8DB;
-/**********    
+    background: #A6D8DB;  
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-***************/    
+  
 }
 
 .home {
     margin: 25px;
 }
+.home:hover{
+    background-color: yellow;
+}
 
 .franklin {
     margin: 50px;
 }
+.franklin:hover {
+    background-color: darkmagenta;
+}
 
-.greenville{
+.greenville {
     margin: 50px;
+}
+
+.greenville:hover {
+    background-color: deeppink;
+
 }
 
 .springfield {
     margin: 50px;
 }
+.springfield:hover {
+    background-color: aquamarine;
+}
 
 .search {
     margin: 50px;
 }
-
+.search:hover {
+    background-color: crimson;
+}
 
 .footer {
     border: 10px solid red;
