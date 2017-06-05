@@ -8,75 +8,61 @@
 </head>
     
 <body>
-    
-<!--    
-<h2> PC version</h2>
-    
-<!-- top navi bar section 
-<img> <!-- brand insert here    
-<img src="images/logo-blue.jpg">
-<p> Local Weather </p>    
+ 
+<!--    This is the large frame -->
+<div id="largeFrame">     
+<header>    
+<!-- top display for the large veiw -->
 
-(Navi bar)    
-    <nav> <b>Home Franklin Greenville Springfield Search </b> </nav>
+<div class="title">    
+    <div class = "largeTopdisplay">  
+        <img src="images/logo-blue.jpg"> 
+        <p> Local Weather</p>     
+    </div>
+</div>    
+
+<!-- navi bar for large view -->
     
- (Current Condition)
-<img src="sun.jpeg">
-<h2> (Current Conditions)</h2>
-<b> Wind </b>
-    1-5 MPH
-    <br>
-<b>Precipitation</b>
-    0 in
-<img> (background image)
-<p> Franklin, ID</p>
-    
-(Hourly Forecast Section)
-<h2> Franklin</h2>        
-<ul>
-    <li> City: Franklin </li>
-    <li> State: ID </li>
-    <li> High: 90 </li>
-    <li> Low: 66 </li>
-    <li> Precip: 0</li>
-    <li> Wind 1 - 5 mph</li>
-    <li> Direction: Southwest </li>
-    <li> Summary: Sunny </li>
-    <li> Longitude : -111.802757</li>
-    <li> Latitude: 42.011902</li>
-    <li> Zip : 83237</li>
-    <li> Hourly :
-        <ol>0 : 67</ol>
-        <ol>1 : 67</ol>
-        <ol>2 : 69</ol>
-        <ol>3 : 69</ol>
-        <ol>4 : 69</ol>
-        <ol>5 : 70</ol>
-        <ol>6 : 69</ol>
-        <ol>7 : 72</ol>
-        <ol>8 : 74</ol>
-        <ol>9 : 77</ol>
-        <ol>10 : 79</ol>
-        <ol>11 : 81</ol>
-        <ol>12 : 84</ol>
-        <ol>13 : 86</ol>
-        <ol>14 : 88</ol>
-        <ol>15 : 90</ol>
-        <ol>16 : 90</ol>
-        <ol>17 : 85</ol>
-        <ol>18 : 83</ol>
-        <ol>19 : 79</ol>
-        <ol>20 : 74</ol>
-        <ol>21 : 70</ol>
-        <ol>22 : 68</ol>
-        <ol>23 : 66</ol>
+    <div class = "largeNavbar"> 
+        <nav>
+            <span class = "navLink"> Home </span>
+            <span class = "navLink"> Franklin </span>  
+            <span class = "navLink"> Greenville </span>  
+            <span class = "navLink"> Springfield </span>  
+            <span class = "navLink"> Search </span>  
+         </nav>
         
-    </li>
+    </div>    
+</header>    
+<!-- <img src="sun.jpeg"> -->
+
+<div class = "largeContent">    
+   <div class="box"> Current Conditions
+       <p> Wind 1-5 MPH </p>
+       <p> Precipitation 0in</p>
+    </div>
     
-</ul>    
+    <div class="box"> Franklin, ID
+        <div class="middleBox">
+            <p> 17</p>
+            <p> 17 / 3 </p>
+            <p> Sunny </p>
+        </div>
+    </div>    
+    <div class="box"> Hourly Forecast
+        <ul>
+            <li> 8:00 AM: 67</li>
+            <li> 9:00 AM: 68</li>
+            <li> 10:00 AM: 69</li>
+        </ul>
+    </div>    
+</div>
     
 <footer> Copyright Link to Home </footer>    
--->
+
+</div>    
+
+<div id="smallFrame">    
 <main>    
     <div class="topdisplay">
         <h1><span class="onedice">&#9856;</span>
@@ -100,7 +86,7 @@
             <p>Wind 1-5 mph</p>
             <p> Preciptiation : 0in</p>
     </div>  
-<!--
+
     <div class="hourlyforecast">
      <h2> Hourly Forecast</h2>
         <ul>
@@ -110,7 +96,7 @@
             <li> 9:00am 77 &#8457</li>
         </ul>
     </div>
--->
+
 
     
     <div class="botnav">
@@ -127,10 +113,10 @@
     <div class="footer">
     <footer> Copyright Link to Home </footer> 
     </div>
-    
+   
 </main>          
     
-
+</div>
   
         
 </body>

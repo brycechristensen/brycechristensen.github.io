@@ -62,6 +62,52 @@ h1 {
     text-align: right;
 }
 
+footer {
+    border: 5px solid pink;
+}
+
+/****************
+Large Frame CSS
+***************/
+#largeFrame {
+    display: none;   
+}
+
+.largeTopdisplay {
+    display: flex;
+    border: 10px solid red;
+    background: #A6D8DB
+    
+}
+
+.largeNavbar {
+    display: flex;
+    flex: nowrap;
+    border: 5px solid blue;
+    justify-content: space-around;
+    height: 50px
+
+}
+
+.navLink {
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+}
+
+.largeContent {
+    display: flex;
+    flex: nowrap;
+    border: 5px solid green;
+    align-content: space-around;
+}
+
+.box {
+    border: 5px solid purple;
+    width: 50%;
+    height: 200px
+}
+
 /**********
 top display and dice orientation
 ***********/
@@ -69,22 +115,22 @@ top display and dice orientation
 .topdisplay { 
     border: 10px solid red;
     background-color: #F07C6C;
-}
+        }
 
 .onedice {
     transform: rotate(10deg);
     display: inline-block;
-}
+        }
 
 .sixdice {
     transform: rotate(12deg);
     display: inline-block;
-}
+        }   
 
 
 .topdisplay h1 + h1 {
     text-align: right;
-}
+        }
 
 
 .summarybox {
@@ -94,7 +140,7 @@ top display and dice orientation
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-}
+        }
 
 .hourlyforecast {
     border: 10px solid orange;
@@ -102,7 +148,7 @@ top display and dice orientation
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-}
+        }
 
 .currentconditions {
     border: 10px solid green;
@@ -110,7 +156,7 @@ top display and dice orientation
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-}
+        }
 
 /**********************************************
     This contains the bottom navigation
@@ -169,5 +215,17 @@ top display and dice orientation
     border: 10px solid red;
     background-color: #F07C6C
 }
+
+@media screen and (min-width: 500px)
+    {
+        #largeFrame {
+            display: block;
+        }
+        
+        #smallFrame {
+            display: none;
+        }
+        
+    }
 
 
