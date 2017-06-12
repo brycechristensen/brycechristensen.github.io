@@ -85,7 +85,8 @@ Large Frame CSS
     flex: nowrap;
     border: 5px solid blue;
     justify-content: space-around;
-    height: 50px
+    height: 50px;
+    background-color: #E7EF61
 
 }
 
@@ -100,12 +101,15 @@ Large Frame CSS
     flex: nowrap;
     border: 5px solid green;
     align-content: space-around;
+    background-image: url(sunny-winter.jpeg);
 }
 
 .box {
     border: 5px solid purple;
     width: 50%;
-    height: 200px
+    height: 375px;
+    color: mintcream;
+    text-align: center;
 }
 
 /**********
