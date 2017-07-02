@@ -23,14 +23,15 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        url: "http://api.wunderground.com/api/c3e1f8d932f84850/geolookup/conditions/q/" + lat + "," + long + ".json", success: function(data, textStatus, xhr) {
-        $("#cityDisplay").html(data.location.city+', '+data.location.state);
-        $("#currentTemp").html(Math.round(data.current_observation.temp_f)+ "&degF");    
+        url: "https://api.wunderground.com/api/c3e1f8d932f84850/geolookup/conditions/q/" + lat + "," + long + ".jsonp", success: function(data, textStatus, xhr) {
+            $("#cityDisplay").html(data.location.city+', '+data.location.state);
+            $("#currentTemp").html(Math.round(data.current_observation.temp_f)+ "&degF");    
             //data.nearby_weather_stations.state);   
-        $("#summary").html("Weather Outside is " + data.current_observation.weather);
-        $("#add1").html("Wind: " + data.current_observation.wind_mph + "MPH " + data.current_observation.wind_dir);
-        $("#add2").html("Humidity: " + data.current_observation.relative_humidity);
-        $("#add3").html("UV: " + data.current_observation.UV);    
+            $("#summary").html("Weather Outside is " + data.current_observation.weather);
+            $("#add1").html("Wind: " + data.current_observation.wind_mph + "MPH " + data.current_observation.wind_dir);
+            $("#add2").html("Humidity: " + data.current_observation.relative_humidity);
+            $("#add3").html("UV: " + data.current_observation.UV);    
+            
         console.log(data);
            
             }

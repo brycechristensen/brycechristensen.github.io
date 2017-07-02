@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+body {
+ font-size: 20px;    
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ background-color: antiquewhite;
+}
+
+
+
+/**
+
+Don't know how to do with this  
+
+{
+ box-sizing: border-box; changes width property
+    to total width instead of content width 
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+ display: block; /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements 
+}
+****************************************************/
+
+/************
+Font Stuff
+***************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, "second choice", generic-family;
+}
+
+
+/*******************
+Css Stuff
+***************/
+main {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ background-image: url(sunny-winter.jpeg);
+ background-size: cover;
+}
+
+h1 {
+    text-align: right;
+}
+
+footer {
+    border: 5px solid pink;
+}
+
+/****************
+Large Frame CSS
+***************/
+#largeFrame {
+    display: none;   
+}
+
+.largeTopdisplay {
+    display: flex;
+    border: 3px solid black;
+    background: #A6D8DB
+    
+}
+
+a {
+   border: 5px solid black;
+    justify-content:space-around;
+}
+
+.largeNavbar {
+    display: flex;
+    flex: nowrap;
+    border: 5px solid blue;
+    justify-content: space-around;
+    height: 50px;
+    background-color: #E7EF61
+
+}
+
+.navLink {
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+}
+
+.largeContent {
+    display: flex;
+    flex: nowrap;
+    border: 5px solid green;
+    align-content: space-around;
+    background-image: url(sunny-winter.jpeg);
+}
+
+.box {
+    border: 5px solid black;
+    width: 50%;
+    height: 375px;
+    color: mintcream;
+    text-align: center;
+}
+
+/**********
+top display and dice orientation
+***********/
+
+.topdisplay { 
+    border: 10px solid red;
+    background-color: #F07C6C;
+        }
+
+.onedice {
+    transform: rotate(10deg);
+    display: inline-block;
+        }
+
+.sixdice {
+    transform: rotate(12deg);
+    display: inline-block;
+        }   
+
+
+.topdisplay h1 + h1 {
+    text-align: right;
+        }
+
+
+.summarybox {
+    border: 10px solid pink;
+    margin-top: -.7em;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+        }
+
+.hourlyforecast {
+    border: 10px solid orange;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+        }
+
+.currentconditions {
+    border: 10px solid green;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+        }
+
+/**********************************************
+    This contains the bottom navigation
+********************************************/
+.botnav {
+    border: 10px solid blue;
+    margin: 100px;
+    padding: 0;
+    background: #A6D8DB;  
+/**********************    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+************************/  
+}
+
+.home {
+    margin: 25px;
+}
+.home:hover{
+    background-color: yellow;
+}
+
+.franklin {
+    margin: 50px;
+}
+.franklin:hover {
+    background-color: darkmagenta;
+}
+
+.greenville {
+    margin: 50px;
+}
+
+.greenville:hover {
+    background-color: deeppink;
+
+}
+
+.springfield {
+    margin: 50px;
+}
+.springfield:hover {
+    background-color: aquamarine;
+}
+
+.search {
+    margin: 50px;
+}
+.search:hover {
+    background-color: crimson;
+}
+
+.footer {
+    border: 10px solid red;
+    background-color: #F07C6C
+}
+
+@media screen and (min-width: 500px)
+    {
+        #largeFrame {
+            display: block;
+        }
+        
+        #smallFrame {
+            display: none;
+        }
+        
+    }
+
+

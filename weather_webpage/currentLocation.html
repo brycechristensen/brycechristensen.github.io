@@ -3,11 +3,9 @@
 <head>
     <html lang="en-us"></html>
     <meta charset="utf-8">
-    <title> Greenville Weather Page </title>
+    <title> Current Location </title>
     
 <link rel="stylesheet" type="text/css" href="screen1.css"> 
-    
-    
 </head>
     
 <body>
@@ -20,7 +18,7 @@
 <div class="title">    
     <div class = "largeTopdisplay">  
         <img src="images/logo-blue.jpg"> 
-        <p> Local Weather: Greenville's Weather</p>     
+        <p> Local Weather </p>     
     </div>
 </div>    
 
@@ -28,35 +26,39 @@
     
     <div class = "largeNavbar"> 
         <nav>
-            <a href="currentLocation.html"> Current Location </a>
+            <span class = "navLink"> Current Location </span>
            <a href="weatherframe.html"> Franklin </a>
-            <span class = "navLink"> Greenville </span>  
+        <a href = "greenville.html"> Greenville </a>  
             <span class = "navLink"> Springfield </span>  
-            <span class = "navLink"> Search </span>  
+            <a href = "/search/search.html"> Search </a>  
          </nav>
-        
+       
     </div>    
 </header>    
 <!-- <img src="sun.jpeg"> -->
 
 <div class = "largeContent">    
    <div class="box"> Current Conditions
-       <p> Wind 1-5 MPH </p>
-       <p> Precipitation 0in</p>
+       <div id = "currentConditions"></div>
+       <h1 id="cityDisplay"></h1>
+        <ul id="current_conditions">
+          <li id="currentTemp"></li>
+          <li id="summary"></li>
+          <li id="add1"></li>
+          <li id="add2"></li>
+          <li id="add3"></li>
+        </ul>    
     </div>
     
-    <div class="box"> Greenville, SC
+    <div class="box"> 
         <div class="middleBox">
-            <p> 17</p>
-            <p> 17 / 3 </p>
-            <p> Sunny </p>
+            <h1 id="cityDisplay"></h1>
+            <li id="currentTemp"></li>
         </div>
     </div>    
     <div class="box"> Hourly Forecast
         <ul>
-            <li> 8:00 AM: 67</li>
-            <li> 9:00 AM: 68</li>
-            <li> 10:00 AM: 69</li>
+            <div id= "hourlyForecast"></div>
         </ul>
     </div>    
 </div>
@@ -114,7 +116,14 @@
     </div> 
     
     <div class="footer">
-    <footer> Copyright Link to Home </footer> 
+    <footer>
+        <p> copyright Link to Home </p>
+        
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/jsonweather-html/scripts/modules.js"></script>
+    <script src="/jsonweather-html/scripts/remote_wu.js"></script>
+        
+    </footer> 
     </div>
    
 </main>          
