@@ -1,0 +1,181 @@
+/************************************
+To do:
+    background image for whole website
+    css touch up
+    find picture for the json object to display
+    
+**********************************/
+main {
+    
+}
+
+#largeDisplay {
+    display:none;
+/*    padding: 1em;*/
+}
+
+h1#welcome {
+   border: 10px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+/*This is the CSS for the Jquery Stuff*/
+h1#name {
+    height: 50px;
+    font-size: 300%;
+}
+
+/**********Aligning the Json content**********/
+#jsonBox {
+    border: 10px solid black; 
+    display: flex;
+}
+
+#jsonPicutre {
+    width: 50%;
+}
+
+#jsonContent {
+    width: 50%
+}
+
+
+
+
+#title {
+    border: 1px solid red;
+    border-width: 10px;
+}
+
+.featurePic {
+/*    padding-left: 1em;*/
+    padding-right: 2em;
+    width: 100%;
+}
+
+.imageText {
+    color: red;
+    position: relative;
+    right: 50%;
+}
+
+/*li {*/
+/*    display: flex;*/
+/*    right: 50%;*/
+/* list-style-type: none;   */
+/*}*/
+
+/*fixing the home link*/
+
+.imageText li{
+    color: red;
+    position: relative;
+    right: 50%;
+    list-style-type: none;
+}
+
+/*Formatting the bottom display to look nice */
+
+#bottomcontent {
+    display: flex   
+}
+
+#featuredRecipes {
+    justify-content: center;
+    width: 50%;
+    
+
+    
+}
+
+#rocketReviews {
+/*    display: flex;*/
+    width: 50%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/**********
+main display css
+*********/
+#mainDisplay {
+    display: flex;
+
+}
+#box1, #box2, #box3 {
+    border: 10px solid #990033;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+#box3 {
+    margin-bottom: 6em;
+}
+
+#homeLink:hover, #anvilLink:hover, #explosiveLink:hover, #decoyLink:hover, #trapsLink:hover{
+    color: dodgerblue;
+    
+}
+
+#largeNav {
+    border: 5px solid #990033;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;   
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #de2226;
+    height: 5em;
+    align-items: center;
+    color: white;
+    
+    
+}
+
+#smallNav {
+    border: 5px solid #990033;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #de2226;
+    height: 5em;
+    align-items: center;
+    color: white;
+    
+    
+}
+
+/********
+Changes the view from large to small
+*********/
+@media screen and (min-width: 500px)
+    {
+        #largeDisplay {
+            display: block;
+        }
+        
+        
+        #smallDisplay {
+            display: none;
+        }
+        
+        #smallNav {
+            display: none;
+        }
+        
+    }

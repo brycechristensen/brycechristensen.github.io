@@ -9,14 +9,161 @@
   <meta name="Bryce Christensen" content="SitePoint">
 
   <link rel="stylesheet" href="/acme/css/acme.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-    
 </head>
+    
+<header>
+    <div id="title"> 
+        <img src="/acme/images/site/logo.png">
+    </div>
+</header>  
 
-<body>
-  <script src="js/acme.json"></script>
-</body>
+   
+<main>
+<!-- This is the large Display -->
+    
+<div id="largeDisplay">
+    <nav id = "largeNav">
+        <!--<div id="largeNav">
+        -->
+        <a href = "/acme/acme.html"> Home </a> 
+            <span id="anvilLink"> Anvils</span>
+            <span id="explosiveLink"> Explosives </span>
+            <span id="decoyLink"> Decoys </span>
+            <span id="trapsLink"> Traps </span>
+    </nav>
+
+    <h1 id ="welcome"> ACME Website </h1>
+    
+    <!--    This is the variables that contain the json objects -->
+    
+    <section class="json-container">
+          <h1 id="name"></h1>
+            <div id="jsonBox">
+                <div id="jsonPicutre">There picture goes here
+                </div>
+                
+                <div id="jsonContent">
+                    <ul id="content">
+                    <li id="path"></li>
+                    <li id="description"></li>
+                    <li id="manufacturer"></li>
+                    <li id="price"></li>
+                    <li id="reviews"></li>
+                </ul>
+                </div> 
+        </div>
+    </section>    
+    
+    <section id="mainDisplay">
+        <img class="featurePic" src="/acme/images/site/feature.jpg">
+        
+        <div class="imageText">
+         <ul>
+        <li><h2>Acme Rocket</h2></li>
+             <li>Quick lighting fuse</li>
+        <li>NHTSA approved seat belts</li>
+        <li>Mobile launch stand included</li>
+        <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
+        </ul>
+        </div>
+    </section>
+        
+<div id="bottomcontent">   
+    <div id="featuredRecipes">
+        <h2> Featured Recipes</h2>
+        
+            <img src="/acme/images/recipes/bbqsand.jpg">
+            <figcaption> <a href="#">Pulled RoadRunner BBQ</a></figcaption>
+            <img src="/acme/images/recipes/potpie.jpg">
+            <figcaption> <a href="#">RoadRunner Pot Pie</a></figcaption>
+            <img src="/acme/images/recipes/soup.jpg">
+            <figcaption> <a href="#">Roadrunner Soup</a></figcaption>
+            <img src="/acme/images/recipes/taco.jpg">
+            <figcaption> <a href="#">Roadrunner Taco</a></figcaption>    
+    
+    
+    </div>    
+    
+    <div id="rocketReviews">
+        <h2> ACME Rocket Reviews </h2>
+        <ul>
+    <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+    <li>"That thing was fast!" (4/5)</li>
+    <li>"Talk about fast delivery." (5/5)</li>
+    <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+    <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+  </ul>
+    
+    </div>
+</div>
+    
+    
+    <footer>
+    <p>&copy; 2017 ACME, All rights reserved.
+        All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
+    </footer>
+    
+    
+</div>
+    
+    
+    
+    
+    
+    <!-- This is the small Display for the website -->
+    <div id="smallDisplay">
+    <div id="box1">
+        <h2> Featured Product</h2>
+            <p> Having a nasty time capturing your roadrunner? Look no further: This new rocket is the best rocket to use to capture a roadrunner. Using state of the art technology combined with blueprints by NASA. This rocket will gurantee that no roadrunner gets away. </p>
+    </div>
+    
+    <div id="box2">
+        <h2> What is ACME? </h2>
+            <p> Heard of Bugs Bunny? Daffy Ducky? Elmer Fudd? Porky the Pig? What do they have in common? All of their projects are funded by ACME! ACME started in the backyard of wild kid's imagination back in 1948. The kid's motto was "I don't want to come inside Mom!" But as the years went by and the kid's vocabulary grew; that motto changed to "Supply and Demand, Cheap Work Labor, and Really Shotty Business Transactions." That motto has become what ACME is today. We pride ourselves in making the cheapest, low quality materials you've known to love from other businesses. </p>
+        </div>
+            
+    <div id="box3">
+        <h2> What do we do for you?</h2>
+            <p> Here at ACME, we pledge our time and effort into making your life easier. Whether it's capturing roadrunners, loading your arsenal with bullets for Rabbit or Duck season, or simply needing just a little bit of help caputuring that little twittee bird. We provide the materials for your various projects. You need stuff? We got stuff! </p>
+    </div>
+    
+    <div id="box3">
+        <h2> Recipes </h2>
+            <p> What to do now that you caught a roadrunner?</p>
+        <div id="recipePic">
+            <img src="/acme/images/recipes/bbqsand.jpg">
+            <figcaption> <a href="#">Pulled RoadRunner BBQ</a></figcaption>
+            <img src="/acme/images/recipes/potpie.jpg">
+            <figcaption> <a href="#">RoadRunner Pot Pie</a></figcaption>
+            <img src="/acme/images/recipes/soup.jpg">
+            <figcaption> <a href="#">Roadrunner Soup</a></figcaption>
+            <img src="/acme/images/recipes/taco.jpg">
+            <figcaption> <a href="#">Roadrunner Taco</a></figcaption>
+            
+            
+        </div>
+    </div>
+
+    </div> 
+</main>    
+
+    
+<nav>
+    <div id="smallNav">
+        <span id="homeLink"> Home </span>
+        <span id="anvilLink"> Anvils</span>
+        <span id="explosiveLink"> Explosive </span>
+        <span id="decoyLink"> Decoys </span>
+        <span id="trapsLink"> Traps </span>
+        
+    </div>
+</nav>
+    
+    
+
+
+<footer>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script src="/acme/support/acme.js"></script>    
+</footer>
 </html>

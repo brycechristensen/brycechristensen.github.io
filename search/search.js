@@ -28,7 +28,7 @@ function getData(input) {
     + input + ".json"
     , dataType: "jsonp"
     , success: function (data) {
-      console.log(data);
+      console.log("This is the data: " + data);
       var location = data.location.city + ', ' + data.location.state;
       var temp_f = data.current_observation.temp_f;
       console.log('Location is: ' + location);

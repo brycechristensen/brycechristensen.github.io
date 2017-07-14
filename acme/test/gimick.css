@@ -1,0 +1,25 @@
+#bigBox {
+    border: 10px solid black; 
+    display: flex;
+}
+
+#box1 {
+    background-color: yellow;
+    color: red;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    width: 50%;
+}
+
+#box2 {
+ background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 50%;
+    height: 20em;
+        
+}
