@@ -107,7 +107,9 @@ main display css
     display: flex;
 
 }
-#box1, #box2, #box3 {
+
+/*Formats the boxes for the small display */
+#box1, #box2, #box3, #box4 {
     border: 10px solid #990033;
     background-color: yellow;
     display: flex;
@@ -118,7 +120,7 @@ main display css
     margin-top: 2em;
 }
 
-#box3 {
+#box4 {
     margin-bottom: 6em;
 }
 

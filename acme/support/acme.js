@@ -10,7 +10,8 @@ $.ajax ({
         console.log( '[' + input + ']')
         
         var data = data[(input.trim())];
-//        $("#path").img(data.path);
+        
+       $("#path").html(data.path);
         $("#description").html(data.description);
         console.log("This is the data: " + data)
         
@@ -43,6 +44,7 @@ $.ajax ({
 $("#largeNav span").on("click", function (evt) {
   evt.preventDefault();
     var click = $(this).text();
+    $("mainDisplay").hide();
     
     console.log(click);
     
@@ -51,10 +53,13 @@ $.ajax({
     , dataType: "json"
     , success: function (data) {
     console.log(data);
-    displayData(click);    
+    displayData(click);
+    
         }
   });
 });
+
+
 /*******
 function toTitleCase(str){
     return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
