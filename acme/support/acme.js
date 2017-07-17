@@ -16,7 +16,7 @@ $.ajax ({
         
         
         $("#manufacturer").html(data.manufacturer);
-        $("#price").html(data.price);
+        $("#price").html("$" + data.price);
         $("#reviews").html(data.reviews);
         $('#mainDisplay').html("");
         $('#bottomcontent').html("");

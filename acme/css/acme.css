@@ -14,7 +14,7 @@ main {
     color: white;
 }
 
-#jsonContent {
+#jsonContent ul{
     list-style-type: none;
 }
 #largeDisplay {
@@ -37,8 +37,9 @@ h1#name {
 
 /**********Aligning the Json content**********/
 #jsonBox {
-    border: 10px solid black; 
+/*    border: 10px solid black; */
     display: flex;
+    padding: inherit;
 }
 
 #jsonPicutre {
@@ -49,6 +50,10 @@ h1#name {
     width: 50%
 }
 
+#price {
+    font-size: 200%;
+    color: red;
+}
 
 
 
