@@ -20,6 +20,7 @@ $.ajax ({
         $("#reviews").html(data.reviews);
         $('#mainDisplay').html("");
         $('#bottomcontent').html("");
+        $('smallDisplay').html("");
         
         
 /*******************        
