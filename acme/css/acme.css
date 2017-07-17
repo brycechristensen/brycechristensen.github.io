@@ -97,6 +97,9 @@ h1#name {
         
 }
 
+a {
+    word-spacing: 30p;
+}
 .featuredRecipes {
     justify-content: center;
     width: 50%;
