@@ -22,24 +22,43 @@
 <!-- This is the large Display -->
     
 <div id="largeDisplay">
-    <nav>
-        <div id="largeNav">
-            <span id="homeLink"> Home </span>
+    <nav id = "largeNav">
+        <!--<div id="largeNav">
+        -->
+        <a href = "#"> Home </a> 
             <span id="anvilLink"> Anvils</span>
-            <span id="explosiveLink"> Explosive </span>
+            <span id="explosiveLink"> Explosives </span>
             <span id="decoyLink"> Decoys </span>
             <span id="trapsLink"> Traps </span>
-        
-        </div>
     </nav>
+
+    <h1 id ="welcome"> ACME Website </h1>
     
-    <h1>
-        Content Title Here
-    </h1>
-        
+    <!--    This is the variables that contain the json objects -->
+    
+    <section class="json-container"> 
+          <h1 id="name"> Welcome to ACME </h1>
+            <div id="jsonBox">
+                <div id="jsonPicutre">
+                </div>
+                
+                <div id="jsonContent">
+                    <ul id="content">
+                    <li id="path"></li>
+                    <li id="description"></li>
+                    <li id="manufacturer"></li>
+                    <li id="price"></li>
+                    <li id="reviews"></li>
+                </ul>
+                </div> 
+        </div>
+    </section>    
+    
         
     
     <footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script src="/acme/support/acme.js"></script> 
     <p>&copy; 2017 ACME, All rights reserved.
         All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
     </footer>
