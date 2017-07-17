@@ -10,8 +10,7 @@ $.ajax ({
         console.log( '[' + input + ']')
         
         var data = data[(input.trim())];
-        
-       $("#path").html(data.path);
+       $("#jsonPicutre").html(data.path)
         $("#description").html(data.description);
         console.log("This is the data: " + data)
         
@@ -19,7 +18,8 @@ $.ajax ({
         $("#manufacturer").html(data.manufacturer);
         $("#price").html(data.price);
         $("#reviews").html(data.reviews);
-        
+        $('#mainDisplay').html("");
+        $('#bottomcontent').html("");
         
         
 /*******************        

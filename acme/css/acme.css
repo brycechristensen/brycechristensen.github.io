@@ -6,9 +6,17 @@ To do:
     
 **********************************/
 main {
-    
+    background-image: url(/acme/images/site/background.jpg);
 }
 
+#largeNav a {
+    text-decoration: none;
+    color: white;
+}
+
+#jsonContent {
+    list-style-type: none;
+}
 #largeDisplay {
     display:none;
 /*    padding: 1em;*/
