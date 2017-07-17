@@ -92,19 +92,19 @@ h1#name {
 /*Formatting the bottom display to look nice */
 
 #bottomcontent {
-    display: flex   
+    display: flex;
+    background-color: floralwhite;
+        
 }
 
 .featuredRecipes {
     justify-content: center;
     width: 50%;
-    
-
-    
+        
 }
 
 #rocketReviews {
-/*    display: flex;*/
+/*   display: flex;*/
     width: 50%;
 }
 
