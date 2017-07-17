@@ -95,7 +95,7 @@ h1#name {
     display: flex   
 }
 
-#featuredRecipes {
+.featuredRecipes {
     justify-content: center;
     width: 50%;
     
